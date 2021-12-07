@@ -1,0 +1,21 @@
+---
+all:
+  hosts:
+    el-instance:
+    k-instance:
+    app-instance:
+  vars:
+    ansible_connection: ssh
+    ansible_user: vagrant
+elasticsearch:
+  hosts:
+    el-instance:
+      ansible_host: 51.250.12.26
+kibana:
+  hosts:
+    k-instance:
+      ansible_host: 51.250.10.172
+filebeat:
+  hosts:
+    app-instance:
+      ansible_host: 51.250.8.54
